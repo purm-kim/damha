@@ -1,0 +1,245 @@
+// 스포카 웹폰트
+@font-face {
+	font-family: 'Spoqa Han Sans Neo';
+	src: url('SpoqaHanSansNeo-Regular.eot');
+	src: local('Spoqa Han Sans Neo Regular'), local('SpoqaHanSansNeo-Regular'),
+			url('SpoqaHanSansNeo-Regular.eot?#iefix') format('embedded-opentype'),
+			url('SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+			url('SpoqaHanSansNeo-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Spoqa Han Sans Neo';
+	src: url('SpoqaHanSansNeo-Light.eot');
+	src: local('Spoqa Han Sans Neo Light'), local('SpoqaHanSansNeo-Light'),
+			url('SpoqaHanSansNeo-Light.eot?#iefix') format('embedded-opentype'),
+			url('SpoqaHanSansNeo-Light.woff2') format('woff2'),
+			url('SpoqaHanSansNeo-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Spoqa Han Sans Neo';
+	src: url('SpoqaHanSansNeo-Bold.eot');
+	src: local('Spoqa Han Sans Neo Bold'), local('SpoqaHanSansNeo-Bold'),
+			url('SpoqaHanSansNeo-Bold.eot?#iefix') format('embedded-opentype'),
+			url('SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+			url('SpoqaHanSansNeo-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+// 몽세라 웹폰트
+@font-face {
+	font-family: 'Montserrat';
+	src: url('Montserrat-SemiBold.eot');
+	src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+			url('Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+			url('Montserrat-SemiBold.woff2') format('woff2'),
+			url('Montserrat-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('Montserrat-Bold.eot');
+	src: local('Montserrat Bold'), local('Montserrat-Bold'),
+			url('Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+			url('Montserrat-Bold.woff2') format('woff2'),
+			url('Montserrat-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+html,
+body {
+	font-size: 6.25%;
+	margin:0;
+	padding:0;
+  font-family: 'Spoqa Han Sans Neo', sans-serif;
+  word-break: keep-all;
+}
+h1, h2, h3,h4,h5, h6, p{
+	padding: 0;
+	margin: 0;
+}
+.section_style{
+	padding-top: 150rem;
+	padding-bottom: 100rem;
+	min-height: 700rem;
+}
+.w-1400{
+	margin:0 auto;
+	width: 1400rem;
+}
+.en_num{
+	font-family: "Montserrat";
+}
+.strong{
+	font-weight: bold;
+}
+.title_txt{
+	padding-top:120rem;
+	padding-bottom: 100rem;
+	.title{
+		position: relative;
+		display: inline-block;
+		color:#E47B41;
+		font-size: 48rem;
+		font-weight: bold;
+		.gray_fade{
+			position: absolute;
+			top:-100%;
+			left:85%;
+			font-size: 180rem;
+			font-weight: bold;
+			color:rgba(0,0,0,0.03)
+		}
+	}
+	.white_fade{
+		position: absolute;
+		right:25%;
+		color:rgba($color: #fff, $alpha: 0.2);
+		font-size: 180rem;
+		font-weight: bold;
+	}
+	.con{
+		font-size: 19rem;
+		font-weight: light;
+		line-height: 29rem;
+	}
+}
+
+.logo_top{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	.logo{
+		position: absolute;
+		top:-15%;
+		right:-10%;
+		width: 1200rem;
+		height: 570rem;
+	}
+	.text_box{
+		padding-top: 300rem;
+		width: 650rem;
+		height: 300rem;
+		span{
+			display: inline-block;
+			padding-left:10rem;
+			font-size: 32rem;
+			font-weight: 300;
+		}
+		h1{
+			font-size: 160rem;
+			font-weight: bold;
+		}
+	}
+}
+
+.services{
+	.w-1400{
+		position: relative;
+		height: 1200rem;
+		.section_txt{
+			position: absolute;
+			top: 30%;
+			.con{
+				b{
+					display: block;
+					width: 100%;
+					font-size: 68rem;
+					font-weight: bold;
+				}
+				span{
+					padding-top: 30rem;
+					display:block;
+					width: 830rem;
+					font-size: 19rem;
+					font-weight: light;
+					line-height: 29rem;
+				}
+			}
+		}
+		.img_wrap{
+			position: absolute;
+			z-index: -10;
+			top:0;
+			right:0;
+			width: 700rem;
+			height: 780rem;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+		.depart{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 220rem;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+	}
+}
+
+.component{
+	.w-1400{
+		.tab{
+			width: 100%;
+			height: 560rem;
+			border: 1px solid #E47B41;
+		}
+	}
+}
+
+.strength{
+	background: url(../img/main/strength_01.png) no-repeat 15% -5% #000;
+	height: 2000rem;
+	.w-1400{
+		margin-top: 100rem;
+		height: 1630rem;
+		border:1px solid #fff;
+	}
+}
+
+.main_target{
+	.w-1400{
+		&:first-child{
+			margin-bottom: 100rem;
+			height: 500rem;
+			border: 1px solid salmon;
+		}
+		&:last-child{
+			height: 500rem;
+			border: 1px solid sandybrown;
+		}
+	}
+}
+
+.contact_us{
+	position: relative;
+	&::before{
+		content:"";
+		position: absolute;
+		left:-10%;
+		display: inline-block;
+		width: 1415rem;
+		height: 685rem;
+		background: url(/img/main/logo_top.png) no-repeat center center  / contain;
+		opacity: 0.1;
+	}
+	
+}
