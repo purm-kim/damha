@@ -9,6 +9,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 	<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/css/style.css">
+	<script src="../js/jquery-3.6.0.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
 	<title>주식회사 담하</title>
 </head>
 <body>
@@ -49,7 +51,7 @@
 				<img src="/img/main/services_01.jpg" alt="">
 			</div>
 			<div class="depart">
-				<img src="/" alt="">
+				<img src="/img/main/services_02.jpg" alt="">
 			</div>
 		</div>
 		
@@ -61,7 +63,30 @@
 			<div class="title_txt">
 				<h2 class="title">상품구성<span class="gray_fade en_num">02</span></h2>
 			</div>
-			<div class="tab">탭 들어갈 구간</div>
+			<div class="tabs">
+				<ul class="tab_nav">
+					<li><a href="#tab-01">브랜딩 <span class="strong en_num">BRANDING</span><i></i></a></li>
+					<li><a href="#tab-02">마케팅 <span class="strong en_num">MARKETING</span><i></i></a></li>
+					<li><a href="#tab-03">컨설팅 <span class="strong en_num">CONSULTING</span><i></i></a></li>
+				</ul>
+				<ul class="tab_content">
+					<li id="tab-01">
+						<div class="content ">
+							브랜딩
+						</div>
+					</li>
+					<li id="tab-02">
+						<div class="content ">
+							마케팅
+						</div>
+					</li>
+					<li id="tab-03">
+						<div class="content ">
+							컨설팅
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</section>
 	<!-- 상품구성 탭 끝 -->
@@ -83,13 +108,79 @@
 			<div class="title_txt">
 				<h2 class="title">주요 마케팅 타겟<span class="gray_fade en_num">04</span></h2>
 			</div>
-			main target 04
+			<div class="grid_table">
+				<div class="grid_item">1</div>
+				<div class="grid_item">2</div>
+				<div class="grid_item">3</div>
+				<div class="grid_item">4</div>
+				<div class="grid_item">5</div>
+
+				<div class="grid_item">6</div>
+				<div class="grid_item">7</div>
+				<div class="grid_item">8</div>
+				<div class="grid_item">9</div>
+				<div class="grid_item">10</div>
+
+				<div class="grid_item">11</div>
+				<div class="grid_item">12</div>
+				<div class="grid_item">13</div>
+				<div class="grid_item">14</div>
+				<div class="grid_item">15</div>
+
+				<div class="grid_item">16</div>
+				<div class="grid_item">17</div>
+				<div class="grid_item">18</div>
+				<div class="grid_item">19</div>
+				<div class="grid_item">20</div>
+
+				<div class="grid_item">21</div>
+				<div class="grid_item">22</div>
+				<div class="grid_item">23</div>
+				<div class="grid_item">24</div>
+				<div class="grid_item">25</div>
+
+				<div class="grid_item">26</div>
+				<div class="grid_item">27</div>
+			</div>
 		</div>
 		<div class="w-1400">
 			<div class="title_txt">
 				<h2 class="title">주요 마케팅 타겟<span class="gray_fade en_num">05</span></h2>
 			</div>
-			main target 05
+			<div class="grid_table">
+				<div class="grid_item">
+					<p class="grid_txt grid_th em">업종</p>
+				</div>
+				<div class="grid_item">
+					<p class="grid_txt grid_th em">세부내용</p>
+				</div>
+				<div class="grid_item">
+					<p class="grid_txt grid_th em">매체</p>
+				</div>
+				<div class="grid_item">
+					<p class="grid_txt grid_td em">일반기업</p>
+				</div>
+				<div class="grid_item">
+					<p class="grid_txt grid_td">브랜드마케팅, 제품마케팅, 서비스마케팅, 인플루언서 마케팅, 리뷰형마케팅, 소비타겟마케팅, 정보형 마케팅, 방문형마케팅</p>
+				</div>
+				<div class="grid_item">
+					<p class="grid_txt grid_td">
+						홈페이지
+						<br>랜딩페이지
+						<br>블로그
+						<br>카페
+						<br>SNS
+						<br>지식인
+						<br>언론보도
+					</p>
+				</div>
+				<div class="grid_item">
+					<p class="grid_txt grid_td em">소상공인</p>
+				</div>
+				<div class="grid_item">
+					<p class="grid_txt grid_td">브랜드마케팅, 제품마케팅, 서비스마케팅, 인플루언서 마케팅, 리뷰형마케팅, 소비타겟마케팅, 정보형 마케팅, 방문형마케팅</p>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- 주요 마케팅 타겟 끝 -->
@@ -104,5 +195,8 @@
 
 	</section>
 	<!-- 고정 문의구간 끝 -->
+	<script>
+		$('.tabs').tabs();
+	</script>
 </body>
 </html>
