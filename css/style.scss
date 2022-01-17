@@ -88,8 +88,6 @@ a{
 	text-decoration: none;
 	color:#000
 }
-
-
 .section_style{
 	padding-top: 150rem;
 	padding-bottom: 100rem;
@@ -105,6 +103,16 @@ a{
 .strong{
 	font-weight: bold;
 }
+.fz19{
+	font-size: 19rem;
+}
+.orange{
+	background-color:rgba($color: #E47B41, $alpha: 0.2);
+}
+.gray{
+	background-color:rgba($color: #c4c4c4, $alpha: 0.5);
+}
+
 .title_txt{
 	padding-top:120rem;
 	padding-bottom: 100rem;
@@ -279,8 +287,29 @@ a{
 		}
 		.tab_content{
 			padding: 100rem 80rem;
-			height: 600rem;
+			height: 480rem;
 			background-color: #f3f3f3;
+			.marble_container{
+				display: flex;
+				column-gap: 50rem;
+				justify-content: center;
+				.marble_graphic_wrap{
+					display: flex;
+					.marble_graphic{
+						margin-right: -20rem;
+						display: inline-block;
+						width: 200rem;
+						height: 200rem;
+						border-radius: 50%;
+						.txt_wrap{
+							padding-top: 65rem;
+							text-align: center;
+							width: 200rem;
+						}
+					}
+				}
+			}
+			
 		}
 	}
 }
@@ -300,15 +329,17 @@ a{
 		&:first-child{
 			margin-bottom: 100rem;
 			height: 100%;
-			border: 1px solid salmon;
 			.grid_table{
 				display: grid;
 				gap: 4rem 4rem;
 				grid-template-columns: 1fr 1fr 1fr 7fr 1.5fr;
 				grid-template-rows: repeat(9, minmax(50rem, auto));
 				.grid_item{
-					padding: 20rem;
+					display: flex;
+					justify-content: center;
 					align-items: center;
+					text-align: center;
+					padding: 15rem;
 					&:nth-child(3){
 						grid-column:3/5;
 						grid-row:1/2;
@@ -349,15 +380,18 @@ a{
 					&:nth-child(n+25):nth-child(-n+27){
 						background-color: #F3C3A9;
 					}
-					.grid_th{
-						font-size: 21rem;
-					}
-					.grid_td{
-						font-size: 18rem;
-					}
-					.em{
-						font-weight: medium;
-					}
+				}
+				.grid_txt{
+					font-size: 16rem;
+				}
+				.grid_th{
+					font-size: 21rem;
+				}
+				.grid_td{
+					font-size: 17rem;
+				}
+				.em{
+					font-weight:500;
 				}
 			}
 			
@@ -393,18 +427,18 @@ a{
 					&:nth-child(n+7):nth-child(-n+8){
 						background-color: #D9E2FA;
 					}
-					.grid_txt{
-						vertical-align: middle;
-					}
-					.grid_th{
-						font-size: 21rem;
-					}
-					.grid_td{
-						font-size: 18rem;
-					}
-					.em{
-						font-weight:500;
-					}
+				}
+				.grid_txt{
+					vertical-align: middle;
+				}
+				.grid_th{
+					font-size: 21rem;
+				}
+				.grid_td{
+					font-size: 18rem;
+				}
+				.em{
+					font-weight:500;
 				}
 			}
 		}

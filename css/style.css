@@ -94,6 +94,18 @@ a {
   font-weight: bold;
 }
 
+.fz19 {
+  font-size: 19rem;
+}
+
+.orange {
+  background-color: rgba(228, 123, 65, 0.2);
+}
+
+.gray {
+  background-color: rgba(196, 196, 196, 0.5);
+}
+
 .title_txt {
   padding-top: 120rem;
   padding-bottom: 100rem;
@@ -288,8 +300,39 @@ a {
 
 .component .w-1400 .tab_content {
   padding: 100rem 80rem;
-  height: 600rem;
+  height: 480rem;
   background-color: #f3f3f3;
+}
+
+.component .w-1400 .tab_content .marble_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50rem;
+          column-gap: 50rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.component .w-1400 .tab_content .marble_container .marble_graphic_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.component .w-1400 .tab_content .marble_container .marble_graphic_wrap .marble_graphic {
+  margin-right: -20rem;
+  display: inline-block;
+  width: 200rem;
+  height: 200rem;
+  border-radius: 50%;
+}
+
+.component .w-1400 .tab_content .marble_container .marble_graphic_wrap .marble_graphic .txt_wrap {
+  padding-top: 65rem;
+  text-align: center;
+  width: 200rem;
 }
 
 .strength {
@@ -306,7 +349,6 @@ a {
 .main_target .w-1400:first-child {
   margin-bottom: 100rem;
   height: 100%;
-  border: 1px solid salmon;
 }
 
 .main_target .w-1400:first-child .grid_table {
@@ -320,10 +362,17 @@ a {
 }
 
 .main_target .w-1400:first-child .grid_table .grid_item {
-  padding: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  padding: 15rem;
 }
 
 .main_target .w-1400:first-child .grid_table .grid_item:nth-child(3) {
@@ -401,16 +450,20 @@ a {
   background-color: #F3C3A9;
 }
 
-.main_target .w-1400:first-child .grid_table .grid_item .grid_th {
+.main_target .w-1400:first-child .grid_table .grid_txt {
+  font-size: 16rem;
+}
+
+.main_target .w-1400:first-child .grid_table .grid_th {
   font-size: 21rem;
 }
 
-.main_target .w-1400:first-child .grid_table .grid_item .grid_td {
-  font-size: 18rem;
+.main_target .w-1400:first-child .grid_table .grid_td {
+  font-size: 17rem;
 }
 
-.main_target .w-1400:first-child .grid_table .grid_item .em {
-  font-weight: medium;
+.main_target .w-1400:first-child .grid_table .em {
+  font-weight: 500;
 }
 
 .main_target .w-1400:last-child {
@@ -467,19 +520,19 @@ a {
   background-color: #D9E2FA;
 }
 
-.main_target .w-1400:last-child .grid_table .grid_item .grid_txt {
+.main_target .w-1400:last-child .grid_table .grid_txt {
   vertical-align: middle;
 }
 
-.main_target .w-1400:last-child .grid_table .grid_item .grid_th {
+.main_target .w-1400:last-child .grid_table .grid_th {
   font-size: 21rem;
 }
 
-.main_target .w-1400:last-child .grid_table .grid_item .grid_td {
+.main_target .w-1400:last-child .grid_table .grid_td {
   font-size: 18rem;
 }
 
-.main_target .w-1400:last-child .grid_table .grid_item .em {
+.main_target .w-1400:last-child .grid_table .em {
   font-weight: 500;
 }
 
