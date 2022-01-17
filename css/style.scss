@@ -308,9 +308,7 @@ a{
 				grid-template-rows: repeat(9, minmax(50rem, auto));
 				.grid_item{
 					padding: 20rem;
-					display: flex;
 					align-items: center;
-					text-align: center;
 					&:nth-child(3){
 						grid-column:3/5;
 						grid-row:1/2;
@@ -345,8 +343,11 @@ a{
 					&:nth-child(n+10):nth-child(-n+21){
 						background-color: #FDF2EC;
 					}
-					&:nth-child(n+22):nth-child(-n+)
-					.grid_txt{
+					&:nth-child(n+22):nth-child(-n+24){
+						background-color: #F8DECF;
+					}
+					&:nth-child(n+25):nth-child(-n+27){
+						background-color: #F3C3A9;
 					}
 					.grid_th{
 						font-size: 21rem;

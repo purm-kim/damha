@@ -321,13 +321,9 @@ a {
 
 .main_target .w-1400:first-child .grid_table .grid_item {
   padding: 20rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
 }
 
 .main_target .w-1400:first-child .grid_table .grid_item:nth-child(3) {
@@ -395,6 +391,14 @@ a {
 
 .main_target .w-1400:first-child .grid_table .grid_item:nth-child(n+10):nth-child(-n+21) {
   background-color: #FDF2EC;
+}
+
+.main_target .w-1400:first-child .grid_table .grid_item:nth-child(n+22):nth-child(-n+24) {
+  background-color: #F8DECF;
+}
+
+.main_target .w-1400:first-child .grid_table .grid_item:nth-child(n+25):nth-child(-n+27) {
+  background-color: #F3C3A9;
 }
 
 .main_target .w-1400:first-child .grid_table .grid_item .grid_th {
