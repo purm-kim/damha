@@ -106,18 +106,79 @@ a{
 .fz19{
 	font-size: 19rem;
 }
-.orange{
+.orange_bg{
 	background-color:rgba($color: #E47B41, $alpha: 0.2);
 }
-.gray{
+.gray_bg{
 	background-color:rgba($color: #c4c4c4, $alpha: 0.5);
 }
+.orange{
+	color: #E47B41;
+}
 
+
+.marble_graphic_wrap{
+	display: flex;
+	.marble_graphic{
+		margin-right: -20rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 200rem;
+		height: 200rem;
+		border-radius: 50%;
+		.txt_wrap{
+			text-align: center;
+			width: 200rem;
+		}
+	}
+}
+.marble_title{
+	margin: 50rem auto;
+	width: 90%;
+	.marble_title_ul{
+		display: flex;
+		li{
+			flex:2;
+			text-align: center;
+			font-size: 19rem;
+			&:first-child{
+				flex:1;
+				width: 96rem;
+			}
+			&:last-child{
+				flex:1;
+				width: 96rem;
+			}
+		}
+		.black_bd{
+			border-bottom: 1px solid #000;
+			&:first-child{
+				border-left: 1px solid #000;
+			}
+			&:last-child{
+				border-right: 1px solid #000;
+			}
+		}
+		.orange_bd{
+			border-bottom: 1px solid #E47B41;
+			&:first-child{
+				border-left: 1px solid #E47B41;
+			}
+			&:last-child{
+				border-right:1px solid #E47B41;
+			}
+		}
+	}
+	.marble_title_h3{
+		text-align: center;
+		font-size: 19rem;
+	}
+}
 .title_txt{
-	padding-top:120rem;
-	padding-bottom: 100rem;
 	.title{
 		position: relative;
+		margin-bottom: 100rem;
 		display: inline-block;
 		color:#E47B41;
 		font-size: 48rem;
@@ -130,13 +191,15 @@ a{
 			font-weight: bold;
 			color:rgba(0,0,0,0.03)
 		}
+		.white_fade{
+			position: absolute;
+			top:70%;
+			color:rgba($color: #fff, $alpha: 0.2);
+			font-size: 180rem;
+			font-weight: bold;
+			z-index:9999;
 	}
-	.white_fade{
-		position: absolute;
-		right:25%;
-		color:rgba($color: #fff, $alpha: 0.2);
-		font-size: 180rem;
-		font-weight: bold;
+	
 	}
 	.con{
 		font-size: 19rem;
@@ -286,48 +349,40 @@ a{
 			}
 		}
 		.tab_content{
-			padding: 100rem 80rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding:100rem 20rem 100rem 0 ;
 			height: 480rem;
 			background-color: #f3f3f3;
 			.marble_container{
 				display: flex;
 				column-gap: 50rem;
 				justify-content: center;
-				.marble_graphic_wrap{
-					display: flex;
-					.marble_graphic{
-						margin-right: -20rem;
-						display: inline-block;
-						width: 200rem;
-						height: 200rem;
-						border-radius: 50%;
-						.txt_wrap{
-							padding-top: 65rem;
-							text-align: center;
-							width: 200rem;
-						}
-					}
-				}
 			}
-			
+			.txt{
+				padding:30rem 50rem 0;
+				font-size: 19rem;
+				text-align: center;
+			}
 		}
 	}
 }
 
 .strength{
-	background: url(../img/main/strength_01.png) no-repeat 15% -5% #000;
-	height: 2000rem;
+	background: url(../img/main/strength_01.png) no-repeat 15% -7% #000;
+	height: 1900rem;
 	.w-1400{
-		margin-top: 100rem;
-		height: 1630rem;
-		border:1px solid #fff;
+		// margin-top: 100rem;
+		// height: 1630rem;
+		// border:1px solid #fff;
 	}
 }
 
 .main_target{
 	.w-1400{
 		&:first-child{
-			margin-bottom: 100rem;
+			margin-bottom: 250rem;
 			height: 100%;
 			.grid_table{
 				display: grid;
