@@ -296,7 +296,7 @@ em, i, b, address{
 	.w-1400{
 		margin-top: 50rem;
 		position: relative;
-		height: 1400rem;
+		height: 1100rem;
 		@include mq(mobile){
 			display: flex;
 			flex-direction: column;
@@ -919,6 +919,10 @@ em, i, b, address{
 	height: 80rem;
 	background-color: #E47B41;
   transition: 0.35s ease;
+	@include mq(mobile){
+		height: 400rem;
+		bottom:-400rem;
+	}
 	.close{
 		display: none;
 	}
@@ -956,19 +960,40 @@ em, i, b, address{
 		align-items: center;
 		max-width: 1200rem;
 		height: 80rem;
+		@include mq(mobile){
+			margin:0;
+			padding: 0 30rem;
+			height: 400rem;
+		}
 		.db_form{
 			display: flex;
 			column-gap: 10rem;
+			@include mq(mobile){
+				width: 100%;
+				align-items: center;
+				flex-direction: column;
+				row-gap: 10rem;
+			}
 			.input_txt{
 				text-indent: 5rem;
 				height: 40rem;
+				@include mq(mobile){
+					width: 100%;
+				}
 			}
 			.select_box{
 				height: 40rem;
+				@include mq(mobile){
+					width: 100%;
+				}
 			}
 			.input_txtarea{
 				resize:none;
 				height: 40rem;
+				@include mq(mobile){
+					width: 100%;
+					height: 120rem;
+				}
 			}
 			.checkbox{
 				display: flex;
@@ -986,6 +1011,10 @@ em, i, b, address{
 				color:#fff;
 				font-weight: bold;
 				background-color: #000;
+				@include mq(mobile){
+					width: 100%;
+					height: 55rem;
+				}
 			}
 		}
 		
