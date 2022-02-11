@@ -821,7 +821,7 @@ em, i, b, address{
 	position: relative;
 	@include mq(mobile){
 		padding: 0;
-		height: 600rem;
+		height: 800rem;
 	}
 	&::before{
 		content:"";
@@ -845,7 +845,8 @@ em, i, b, address{
 			width: 435rem;
 			height: 120rem;
 			@include mq(mobile){
-				margin:0;
+				// margin:0;
+				margin-bottom: 70rem;
 				position: static;
 				height: 240rem;
 				&::before{

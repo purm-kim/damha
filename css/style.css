@@ -1090,7 +1090,7 @@ em, i, b, address {
 @media (max-width: 768px) {
   .contact_us {
     padding: 0;
-    height: 600rem;
+    height: 800rem;
   }
 }
 
@@ -1125,7 +1125,7 @@ em, i, b, address {
 
 @media (max-width: 768px) {
   .contact_us .w-1400 .txt_box {
-    margin: 0;
+    margin-bottom: 70rem;
     position: static;
     height: 240rem;
   }
