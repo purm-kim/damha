@@ -71,6 +71,7 @@ body {
   font-family: 'Spoqa Han Sans Neo', sans-serif;
   word-break: keep-all;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -165,6 +166,69 @@ em, i, b, address {
   background-color: #D9E2FA;
 }
 
+#header {
+  position: fixed;
+  width: 100%;
+  height: 80rem;
+  background-color: #fff;
+  -webkit-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  z-index: 500;
+}
+
+#header .nav_wrap {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1300rem;
+  height: 100%;
+}
+
+#header .nav_wrap .img_wrap {
+  display: inline-block;
+  width: 250rem;
+  height: 100%;
+}
+
+#header .nav_wrap .img_wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#header .nav_wrap .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-column-gap: 20rem;
+          column-gap: 20rem;
+  width: 1000rem;
+  height: 100%;
+}
+
+#header .nav_wrap .nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200rem;
+  font-size: 18rem;
+  font-weight: 300;
+}
+
 @media (max-width: 768px) {
   .title_txt {
     text-align: center;
@@ -219,7 +283,7 @@ em, i, b, address {
 
 .logo_top .logo {
   position: absolute;
-  top: -15%;
+  top: -10%;
   right: -10%;
   width: 80%;
   height: 570rem;
@@ -230,7 +294,7 @@ em, i, b, address {
     width: 80%;
     min-height: 200rem;
     max-height: 350rem;
-    top: -15%;
+    top: -5%;
   }
 }
 
@@ -300,7 +364,7 @@ em, i, b, address {
 }
 
 .img_slide .swiper {
-  width: 283rem;
+  width: 100%;
 }
 
 .img_slide .swiper-slide {
@@ -462,6 +526,7 @@ em, i, b, address {
 
 @media (max-width: 768px) {
   .component {
+    padding-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -483,6 +548,12 @@ em, i, b, address {
   margin-bottom: 100rem;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .component .w-1400 .tabs {
+    display: none;
+  }
 }
 
 .component .w-1400 .tabs .tab_nav {
@@ -579,10 +650,91 @@ em, i, b, address {
   text-align: center;
 }
 
+.component .w-1400 .mob_component {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .component .w-1400 .mob_component {
+    margin-top: 60rem;
+    display: block;
+  }
+}
+
+.component .w-1400 .mob_component .marble_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20rem;
+}
+
+.component .w-1400 .mob_component .mob_li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 60rem 50rem;
+  width: 100%;
+  background-color: #f3f3f3;
+  border-top: 3rem solid #E47B41;
+}
+
+.component .w-1400 .mob_component .mob_li:nth-child(2) {
+  background-color: #fff;
+}
+
+.component .w-1400 .mob_component .txt {
+  margin-bottom: 50rem;
+  font-size: 15rem;
+  text-align: left;
+}
+
+.li_title {
+  margin-bottom: 80rem;
+  width: 100%;
+  height: 50rem;
+}
+
+.li_title p {
+  text-align: center;
+  font-size: 32rem;
+}
+
+.li_title i {
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #E47B41;
+}
+
 .marble_graphic_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .marble_graphic_wrap {
+    margin-bottom: 60rem;
+    margin-right: 20rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
 }
 
 .marble_graphic_wrap .marble_graphic {
@@ -599,6 +751,14 @@ em, i, b, address {
   width: 200rem;
   height: 200rem;
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .marble_graphic_wrap .marble_graphic {
+    margin-bottom: -45rem;
+    width: 170rem;
+    height: 170rem;
+  }
 }
 
 .marble_graphic_wrap .marble_graphic .txt_wrap {
@@ -691,11 +851,12 @@ em, i, b, address {
 
 .strength .white_fade {
   position: absolute;
-  top: 5%;
-  left: 60%;
-  color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+  top: -100%;
+  left: 90%;
   font-size: 180rem;
   font-weight: bold;
+  color: rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -705,6 +866,21 @@ em, i, b, address {
 }
 
 .strength .w-1400 {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .strength .w-1400 {
+    display: none;
+  }
+}
+
+.strength .w-1400 .title_txt {
+  position: absolute;
+  right: 20%;
+}
+
+.strength .w-1400 .pcwrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -715,14 +891,8 @@ em, i, b, address {
           justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .strength .w-1400 {
-    display: none;
-  }
-}
-
 .strength .w-1400 .strength_pc {
-  margin-top: 200rem;
+  margin-top: 150rem;
 }
 
 .strength .w-mob {
@@ -1084,6 +1254,7 @@ em, i, b, address {
 }
 
 .contact_us {
+  padding-bottom: 0;
   position: relative;
 }
 
@@ -1097,7 +1268,7 @@ em, i, b, address {
 .contact_us::before {
   content: "";
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: -15%;
   display: inline-block;
   width: 1415rem;
@@ -1119,6 +1290,7 @@ em, i, b, address {
 
 .contact_us .w-1400 .txt_box {
   position: absolute;
+  top: 10%;
   width: 435rem;
   height: 120rem;
 }
@@ -1167,7 +1339,7 @@ em, i, b, address {
 
 .contact_us .w-1400 .contact_address {
   position: absolute;
-  bottom: 0%;
+  bottom: 10%;
   right: 0;
   height: 270rem;
 }

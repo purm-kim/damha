@@ -1,0 +1,450 @@
+#home {
+    margin-right: 214px;
+}
+
+.m-img {
+    height: 750px;
+}
+
+.slide-wrapper {
+    top: -439px;
+    position: relative;
+    float: right;
+    right: -30px;
+    margin-bottom: -411px;
+}
+
+.slide-btn {
+    width: 64px;
+    height: 64px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.rectangle {
+    width: 50px;
+    height: 50px;
+    background-color: #F3F3F3;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    margin: 0 auto;
+}
+
+.rectangle-w {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    margin: 16px auto 13px auto;
+}
+
+.rectangle-w-2 {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    margin: 36px auto 13px auto;
+}
+
+.diagnosis {
+    padding: 35px 0 35px 36px;
+}
+
+.diagnosis-right {
+    padding: 0 !important;
+    background-color: #ffffff;
+}
+
+.diagnosis-left {
+    padding: 0 !important;
+    background: linear-gradient(to right, #073595, #3D9E2D);
+    height: 150px;
+}
+
+.diagnosis-font {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#diagnosis {
+    margin-top: 70px;
+    margin-bottom: 285px;
+}
+
+.hospital-subjects-h1-font {
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 55px;
+    /* identical to box height */
+    text-align: center;
+    color: #000000;
+    margin-bottom: 44px;
+}
+
+.hospital-subjects-sub-font {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    margin: auto;
+    height: 100%;
+    width: fit-content;
+}
+
+.hospital-subjects-font-area {
+    width: 175px;
+    height: 170px;
+    background-color: #073595;
+}
+
+.hospital-subjects-img-area {
+    width: 170px;
+    height: 170px;
+    background-color: #F3F3F3;
+}
+
+
+.hospital-subjects-sub-img-area {
+    height: 450px;
+    /*width: 280px;*/
+}
+
+.hospital-subjects-img-area > a > img {
+    padding-top: 38px;
+}
+
+.hospital-subjects > .container > .row > .col-auto:last-child {
+    padding-left: 0px !important;
+}
+
+.hospital-subjects > .container > .row > .col-auto:first-child {
+    padding-right: 0px !important;
+}
+
+.hospital-subjects > .container > .row > .col-auto:nth-child(n) {
+    padding-right: 3px ;
+    padding-left: 3px;
+}
+
+.hospital-subjects > .container > .row.second > .col-auto:nth-child(n) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.hospital-subjects {
+    margin-bottom: 182px;
+}
+
+figure {
+    position: relative
+}
+
+figcaption {
+    position: absolute;
+    width: 100%;
+    /*line-height: 150px;*/
+    text-align: center;
+    left: 0;
+    top: 184px;
+    /*text-shadow: 0 0 1px white;*/
+    /*font-weight:bold;*/
+    /*color: #ffffff;*/
+}
+
+.figure-top-font {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.figure-detail-font {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 43px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.figure-bottom-font {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+    margin-top: 119px;
+}
+
+figure > img {
+    height: 450px;
+    object-fit: fill;
+    width: 280px;
+}
+
+.figure-bar {
+    width: 0px;
+    height: 118px;
+    left: 400px;
+    top: 2301px;
+
+    border: 1px solid #FFFFFF;
+    margin: auto;
+}
+
+.notice-border-area {
+    /*width: 450px;*/
+    width: 449px;
+    height: 300px;
+    background-color: #F3F3F3;
+}
+
+.notice-board > .container > .row > .col-auto:nth-child(2n) {
+    margin: 0 27px;
+}
+
+.notice-board-title {
+    width: 100%;
+    height: 62px;
+    padding-bottom: 24px;
+}
+
+.notice-board-title-font {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+
+    color: #000000;
+}
+
+.notice-board-contents:first-child {
+    height: 130px;
+    border-bottom: 1px solid #C8C8C8;
+    margin: 20px 20px 0 20px !important;
+}
+
+.notice-board-contents:last-child {
+    height: 130px;
+    margin: 0 20px 20px 20px !important;
+}
+
+.notice-board-contents-line {
+    border-right: 1px solid #C8C8C8;
+    padding: 0 !important;
+}
+
+.notice-board-contents-font {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.notice-border-area > table {
+    margin: 46px 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.notice-border-area > table > tbody {
+    width: 100%;
+}
+
+.notice-border-area > table > tbody > tr {
+    display: flex;
+}
+
+.notice-border-area > table > tbody > tr > td {
+    display: flex;
+    width: 100%;
+}
+
+.notice-border-area > table > tbody > tr > td:first-child {
+    display: block;
+    text-align: left;
+}
+
+.notice-border-area > table > tbody > tr > td:last-child {
+    display: block;
+    text-align: right;
+}
+
+.notice-border-area > table > tbody > tr > td:nth-child(n+1) {
+    padding-bottom: 15px;
+}
+
+.notice-border-area > table > tbody > tr > td {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+
+
+.map-title-font {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 55px;
+    /* identical to box height */
+
+    text-align: left;
+    color: #000000;
+    padding-bottom: 38px;
+}
+
+
+.map-bottom-font {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+
+    color: #000000;
+    padding-top: 53px;
+}
+
+.section-tab-header {
+    height: 300px;
+    background-image: url("../img/sub-menu/ct-cneter.png");
+}
+
+.section-tab-header-font1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+
+    text-align: left;
+
+    color: #000000;
+}
+
+.section-tab-header-font2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 55px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.section-tab-header-font3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #000000;
+
+    margin: 14px 0 0 118px;
+    display: block;
+}
+
+.section-tab-header-content {
+    float: left;
+    /*margin-left: 260px;*/
+    /*padding: 106px 0 106px 300px;*/
+    padding: 106px 0;
+}
+
+.section-tab-header-content2 {
+    float: left;
+    padding: 139px 0 111px 118px;
+}
+
+.nav-tabs-gb {
+    /*padding-left: 300px;*/
+}
+
+.nav-tabs-gb,
+.nav-tabs {
+    height: 60px;
+    background-color: #073595;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs > .nav-item > a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.nav-tabs > .nav-item {
+    margin: auto 0;
+}
+
+.nav-tabs > .nav-item > .nav-link {
+    border: none !important;
+    cursor: pointer;
+    width: 200px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #FFF855;
+
+    padding-top: 11px;
+    border-bottom: 3px solid #FFF855 !important;
+}
+
+
+.section-init-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 43px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+    padding-top: 19px;
+}

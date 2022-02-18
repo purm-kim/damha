@@ -105,6 +105,7 @@ body {
   font-family: 'Spoqa Han Sans Neo', sans-serif;
   word-break: keep-all;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 body{
 	overflow: hidden;
@@ -177,6 +178,52 @@ em, i, b, address{
 	background-color: #D9E2FA;
 }
 
+#header{
+	position:fixed;
+	width: 100%;
+	height: 80rem;
+	background-color: #fff;
+	box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.2);
+	z-index: 500;
+	@include mq(mobile){
+		// height: 60rem
+	}
+	.nav_wrap{
+		margin:0 auto;
+		display: flex;
+		justify-content: space-between;
+		width: 1300rem;
+		height: 100%;
+		.img_wrap{
+			display: inline-block;
+			width:250rem;
+			height:100%;
+			img{
+				width:100%;
+				height:100%;
+				object-fit: contain;
+			}
+		}
+		.nav{
+			display: flex;
+			justify-content: flex-end;
+			column-gap: 20rem;
+			width: 1000rem;
+			height: 100%;
+			li{
+				display: flex;
+				justify-content: center;
+				align-items:center;
+				width: 200rem;
+				font-size: 18rem;
+				font-weight: 300;
+				// background-color: #e7e7e7;\
+			}
+		}
+	}
+}
+
+
 .title_txt{
 	@include mq(mobile){
 		text-align: center;
@@ -219,7 +266,7 @@ em, i, b, address{
 	width: 100%;
 	.logo{
 		position: absolute;
-		top:-15%;
+		top:-10%;
 		right:-10%;
 		width: 80%;
 		height: 570rem;
@@ -227,7 +274,7 @@ em, i, b, address{
 			width: 80%;
 			min-height: 200rem;
 			max-height:350rem;
-			top:-15%;
+			top:-5%;
 		}
 		img{
 			width: 100%;
@@ -270,18 +317,28 @@ em, i, b, address{
 }
 
 .img_slide{
-	// background-color: aquamarine;
 	position: relative;
+	.section_title{
+		margin: 0 auto;
+		padding: 80rem 0;
+		width: 1300rem;
+		background-color: #D5D5D5;
+		.strong{
+			font-size: 50rem;
+			font-weight: bold;
+		}
+	}
 	.swiper{
-		width: 283rem;
+		width: 100%;
 	}
 	.swiper-slide{
+		text-align: center;
 		width: 283rem;
 		height: 283rem;
 		img{
 			width: 100%;
 			height: 100%;
-			object-fit: contain;
+			object-fit: cover;
 		}
 	}
 }
@@ -393,6 +450,7 @@ em, i, b, address{
 
 .component{
 	@include mq(mobile){
+		padding-bottom: 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -404,6 +462,9 @@ em, i, b, address{
 			margin-bottom: 100rem;
 			width: 100%;
 			height: 100%;
+			@include mq(mobile){
+				display: none;
+			}
 			.tab_nav{
 				display: flex;
 				width: 1400rem;
@@ -477,10 +538,64 @@ em, i, b, address{
 				text-align: center;
 			}
 		}
+		.mob_component{
+			display: none;
+			@include mq(mobile){
+				margin-top: 60rem;
+				display: block;
+			}
+			.marble_container{
+				display: flex;
+				flex-direction: column;
+				row-gap: 20rem;
+			}
+			.mob_li{
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				padding:60rem 50rem;
+				width: 100%;
+				background-color: #f3f3f3;
+				border-top: 3rem solid #E47B41;
+				&:nth-child(2){
+					background-color: #fff;
+				}
+			}
+			.txt{
+				margin-bottom: 50rem;
+				font-size: 15rem;
+				text-align: left;
+			}
+		}
 	}
 }
+
+.li_title{
+	margin-bottom: 80rem;
+	width: 100%;
+	height: 50rem;
+	p{
+		text-align: center;
+		font-size: 32rem;
+	}
+	i{
+		display: inline-block;
+		width: 10rem;
+		height: 10rem;
+		border-radius: 50%;
+		background-color: #E47B41;
+	}
+}
+
 .marble_graphic_wrap{
 	display: flex;
+	@include mq(mobile){
+		margin-bottom: 60rem;
+		margin-right: 20rem;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+	}
 	.marble_graphic{
 		margin-right: -20rem;
 		display: flex;
@@ -489,12 +604,19 @@ em, i, b, address{
 		width: 200rem;
 		height: 200rem;
 		border-radius: 50%;
+		@include mq(mobile){
+			// margin-right: -30rem;
+			margin-bottom: -45rem;
+			width:170rem;
+			height: 170rem;
+		}
 		.txt_wrap{
 			text-align: center;
 			width: 200rem;
 		}
 	}
 }
+
 .marble_title{
 	margin: 50rem auto;
 	width: 90%;
@@ -551,24 +673,32 @@ em, i, b, address{
 	}
 	.white_fade{
 		position: absolute;
-		top:5%;
-		left:60%;
-		color:rgba($color: #fff, $alpha: 0.2);
+		z-index: -1;
+		top:-100%;
+		left:90%;
 		font-size: 180rem;
 		font-weight: bold;
+		color:rgba($color: #fff, $alpha: 0.2);
 		@include mq(mobile){
 			display: none;
 		}
 	}
 	.w-1400{
-		display: flex;
-		column-gap: 30rem;
-		justify-content: center;
+		position: relative;
 		@include mq(mobile){
 			display: none;
 		}
+		.title_txt{
+			position:absolute;
+			right: 20%;
+		}
+		.pcwrap{
+			display: flex;
+			column-gap: 30rem;
+			justify-content: center;
+		}
 		.strength_pc{
-			margin-top: 200rem;
+			margin-top: 150rem;
 		}
 	}
 	.w-mob{
@@ -818,6 +948,7 @@ em, i, b, address{
 }
 
 .contact_us{
+	padding-bottom: 0;
 	position: relative;
 	@include mq(mobile){
 		padding: 0;
@@ -826,7 +957,7 @@ em, i, b, address{
 	&::before{
 		content:"";
 		position: absolute;
-		top:30%;
+		top:40%;
 		left:-15%;
 		display: inline-block;
 		width: 1415rem;
@@ -842,6 +973,7 @@ em, i, b, address{
 		height: 875rem;
 		.txt_box{
 			position: absolute;
+			top:10%;
 			width: 435rem;
 			height: 120rem;
 			@include mq(mobile){
@@ -882,7 +1014,7 @@ em, i, b, address{
 		}
 		.contact_address{
 			position:absolute;
-			bottom:0%;
+			bottom:10%;
 			right:0;
 			height: 270rem;
 			@include mq(mobile){
@@ -1022,4 +1154,87 @@ em, i, b, address{
 		
 	}
 	
+}
+
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150rem 80rem;
+  @include mq(mobile) {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18vw;
+    max-width: 100%;
+  }
+  .container {
+    padding: 30rem 0;
+  }
+
+  .upside_wrap {
+    background: $dark_navy;
+    color: $white100;
+    font-size: 17rem;
+    font-weight: 500;
+    .container {
+      @include container(1400rem, 95%);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      @include mq(mobile) {
+        flex-direction: column;
+      }
+      img {
+        width: 270rem;
+      }
+      .info_wrap {
+        margin-left: 80rem;
+        @include mq(mobile) {
+          margin-left: 0;
+          margin-top: 10rem;
+          display: flex;
+          flex-direction: column;
+        }
+        span {
+          margin-right: 30rem;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+  .downside_wrap {
+    background: $deep_navy;
+    color: $white50;
+    font-size: 17rem;
+    font-weight: 500;
+    .container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include mq(mobile) {
+        flex-direction: column;
+      }
+      .info_wrap {
+        width: 470rem;
+        display: flex;
+        @include mq(mobile) {
+          width: 80%;
+          justify-content: center;
+        }
+        span {
+          margin: 0 36rem;
+          @include mq(mobile) {
+            margin: 0 12rem;
+          }
+        }
+      }
+      .copyright {
+        @include mq(mobile) {
+          margin-top: 10rem;
+        }
+      }
+    }
+  }
 }

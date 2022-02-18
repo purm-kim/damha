@@ -1,0 +1,253 @@
+html,
+body {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 14px;
+    color: #000000;
+
+    background-color: #fff;
+    min-height: 100% !important;
+
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.flex-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    overflow: hidden;
+}
+
+.flex-content {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media (min-width: 76px) {
+    #bottom,
+    .right-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    #bottom,
+    .right-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #bottom,
+    .right-menu {
+        display: none;
+    }
+}
+
+
+@media (min-width: 770px) {
+    .right-menu {
+        display: none;
+    }
+
+    figure > img {
+        width: 240px;
+    }
+}
+
+@media (min-width: 992px) {
+    .right-menu {
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        right: 0;
+        background-color: #ffffff;
+        border-left: 1px solid #EDEDED;
+    }
+
+    .fixed-top {
+        position: relative;
+        margin-right: 260px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .right-menu {
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        right: 0;
+        background-color: #ffffff;
+        border-left: 1px solid #EDEDED;
+    }
+
+    .fixed-top {
+        position: relative;
+        margin-right: 260px !important;
+    }
+}
+
+@media (min-width: 1540px) {
+    .right-menu {
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        right: 0;
+        background-color: #ffffff;
+        border-left: 1px solid #EDEDED;
+    }
+
+    .fixed-top {
+        position: relative;
+        margin-right: 260px !important;
+    }
+}
+
+.bottom-1 {
+    width: 100%;
+    height: 150px;
+
+    background: #0E1729;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.bottom-1-contents {
+    float: left;
+    padding-left: 77px;
+    margin-top: 12px;
+}
+
+.bottom-1-contents > div,
+.bottom-1-contents > span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.bottom-1-contents > span:nth-child(2n-1) {
+    padding: 0 20px;
+}
+
+.bottom-2 {
+    width: 100%;
+    height: 80px;
+    background: #0B1221;
+}
+
+.bottom-contents {
+    padding: 45px 260px;
+}
+
+.bottom-2-contents {
+    padding: 30px 260px;
+}
+
+.bottom-2-contents > span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+
+    opacity: 0.5;
+}
+
+.bottom-2-contents-bar {
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+#content-bottom {
+    width: 100%;
+    padding: 150px 0;
+}
+
+.cb-box-area {
+    width: 350px;
+    /*width: 346px;*/
+    height: 250px;
+    padding: 0;
+}
+
+.cb-box-area > div:first-child {
+    ont-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+
+    color: #000000;
+    padding: 50px;
+}
+
+.cb-box-area > div:last-child {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #000000;
+    padding: 50px;
+    text-align: right;
+}
+
+.cb-box-area:nth-child(1) {
+    background: #F5F5F5;
+}
+.cb-box-area:nth-child(2) {
+    background: #CDD7EA;
+}
+.cb-box-area:nth-child(3) {
+    background: rgb(216, 235, 214);
+}
+.cb-box-area:nth-child(4) {
+    background: #073595;
+}
+
+.cb-box-area:nth-child(4) > div:first-child {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+
+    padding: 50px 50px 20px;
+}
+
+.cb-box-area:nth-child(4) > div:last-child {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+
+    color: #FFFFFF;
+    padding: 0 0 0 50px;
+    text-align: left;
+    text-decoration-line: none;
+}

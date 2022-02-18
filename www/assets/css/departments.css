@@ -1,0 +1,106 @@
+/* Font */
+.dept-font-300-21 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 34px;
+    /* or 162% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.dept-font-bold-24 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+}
+
+.dept-font-500-18 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.dept-font-300-18 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+
+    letter-spacing: -0.02em;
+}
+/* Font */
+
+.dept-col-type1 {
+    height: 150px;
+}
+
+.dept-col-type1 > .circle {
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    background: #FFFFFF;
+}
+
+#neurosurgery > section {
+    padding: 0 !important;
+}
+
+#neurosurgery > section:nth-child(n) {
+    background: #FFFFFF;
+}
+
+#neurosurgery > section:nth-child(1) {
+    margin-bottom: 90px;
+}
+
+#neurosurgery > section:nth-child(2) {
+    background: linear-gradient(90deg, #073595 0%, #3D9E2D 100%);
+}
+
+#neurosurgery > section:nth-child(2) > .container {
+    padding: 96px 0 62px;
+}
+
+#neurosurgery > section:nth-child(3) > .container {
+    padding: 218px 0;
+}
+
+#neurosurgery > section:nth-child(n) > .title {
+    padding-top: 150px;
+    text-align: center;
+}
+
+#neurosurgery > section:nth-child(n) > .container > .content {
+    height: 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#neurosurgery-field > div:nth-child(n) {
+    padding: 30px 100px;
+}
+
+/*#neurosurgery-field > div:not(:last-child):nth-child(n) {*/
+/*    border-bottom: 1px dashed #fff*/
+/*}*/
+
+.horizon-line {
+    padding: 0 !important;
+    margin: 0 14px;
+    width: 100%;
+    max-width: 1490px;
+    border-bottom: 1px dashed #fff
+}

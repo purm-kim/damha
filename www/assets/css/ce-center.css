@@ -1,0 +1,24 @@
+#examination-center > section {
+    padding: 0 !important;
+}
+
+#examination-center > section:nth-child(n) {
+    background: #FFFFFF;
+}
+
+#examination-center > section:nth-child(1) {
+    margin-bottom: 90px;
+}
+
+#examination-center > section:nth-child(n) > .title {
+    padding-top: 150px;
+    text-align: center;
+}
+
+#examination-center > section:nth-child(n) > .container {
+    padding: 90px 0 0;
+}
+
+#examination-center > section:nth-child(1) > .container > .row:first-child > .col-auto:not(:last-child) {
+    padding-right: 103px !important;
+}
