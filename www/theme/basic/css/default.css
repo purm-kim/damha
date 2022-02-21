@@ -2,19 +2,19 @@
 
 /* 초기화 */
 html {overflow-y:scroll}
-body {margin:0;padding:0;font-size:0.75em;font-family:'SpoqaHanSansNeo', dotum, sans-serif;background:#fff}
+body {margin:0;padding:0;font-size:0.75em;font-family:'Malgun gothic', dotum, sans-serif;background:#fff}
 html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
-h1, h2, h3, h4, h5, h6 {font-size:1em;font-family:'SpoqaHanSansNeo', dotum, sans-serif}
+h1, h2, h3, h4, h5, h6 {font-size:1em;font-family:'Malgun gothic', dotum, sans-serif}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
 
 ul, dl,dt,dd {margin:0;padding:0;list-style:none}
 legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
 label, input, button, select, img {vertical-align:middle;font-size:1em}
-input, button {margin:0;padding:0;font-family:'SpoqaHanSansNeo', dotum, sans-serif;font-size:1em}
+input, button {margin:0;padding:0;font-family:'Malgun gothic', dotum, sans-serif;font-size:1em}
 input[type="submit"] {cursor:pointer}
 button {cursor:pointer}
 
-textarea, select {font-family:'SpoqaHanSansNeo', dotum, sans-serif;font-size:1em}
+textarea, select {font-family:'Malgun gothic', dotum, sans-serif;font-size:1em}
 select {margin:0}
 p {margin:0;padding:0;word-break:break-all}
 hr {display:none}
@@ -156,12 +156,12 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 #gnb_all_bg {display:none;background:rgba(0,0,0,0.1);width:100%;height:100%;position:fixed;left:0;top:0;z-index:999}
 
 /* 중간 레이아웃 */
-#wrapper {min-height:830px;}
+#wrapper {min-height:calc(100vh - 230px);}
 #container_wr:after {display:block;visibility:hidden;clear:both;content:""}
 #container_wr {margin:0 auto;height:100%;zoom:1}
 #aside {float:right;width:235px;padding:0;height:100%;margin:20px 0 20px 20px}
 
-#container {position:relative;min-height:500px;height:auto !important;margin:20px 0;height:500px;font-size:1em;width:100% !important;zoom:1}
+#container {position:relative;height:auto !important;margin:20px 0;font-size:1em;width:100% !important;zoom:1}
 #container:after {display:block;visibility:hidden;clear:both;content:""}
 #container_title {font-size:1.333em;margin:0 auto;font-weight:bold}
 #container_title span {margin:0 auto 10px;display:block;line-height:30px}
@@ -257,8 +257,8 @@ button.btn02 {display:inline-block;margin:0;padding:7px;border:1px solid #3b3c3f
 
 .btn_confirm {text-align:right} /* 서식단계 진행 */
 
-.btn_submit {border:0;background:#3a8afd;color:#fff;cursor:pointer;border-radius:3px}
-.btn_submit:hover {background:#2375eb}
+.btn_submit {border:0;background:#e47b41;color:#fff;cursor:pointer;border-radius:3px}
+.btn_submit:hover {background:#cd5818}
 .btn_close {border:1px solid #dcdcdc;cursor:pointer;border-radius:3px;background:#fff}
 a.btn_close {text-align:center;line-height:50px}
 
@@ -446,5 +446,9 @@ box-sizing:content-box;
 #device_change {display:block;margin:0.3em;padding:0.5em 0;border:1px solid #eee;border-radius:2em;background:#fff;color:#000;font-size:2em;text-decoration:none;text-align:center}
 
 /* 담하 푸터 디자인 */
-.footer{padding:50px; width:100%; height:150px; background-color: #dbdbdb;}
-.footer .container{width:1200px; margin:0 auto;}
+.footer{padding:50px; width:100%; height:200px; background-color: #171717;}
+.footer .container{width:1200px; margin:0 auto; display: flex; column-gap: 50px; font-size: 15px; font-weight: medium; color: rgba(255,255,255,0.4);}
+.footer .container .info_wrap{display:flex; flex-direction: column; row-gap: 3px; word-break: keep-all;}
+.footer .container .info_wrap .copyright{display: block; font-weight: bold; color: rgba(255,255,255,0.7);}
+.footer .container .img_wrap{width:200px; height:100px; }
+.footer .container .img_wrap img{width:100%; height:100%; object-fit:contain;}

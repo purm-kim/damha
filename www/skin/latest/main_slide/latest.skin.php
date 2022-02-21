@@ -27,7 +27,11 @@ for ($i=0; $i<$list_count; $i++) {
 	$img_link_html = '<a href="'.$wr_href.'" class="lt_img" >'.run_replace('thumb_image_tag', $img_content, $thumb).'</a>';
 ?>
 <div class="swiper-slide">
-	<?php echo $img_content;?>
+	<?php
+	// '<a href="'.$wr_href.'" class="lt_img" >'
+		echo $img_link_html;
+	// '</a>'
+	?>
 </div>
 <?php
 	}

@@ -23,7 +23,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 </head>
 
 <body>
-	<header id="header">
+	<header id="pc_header">
 		<div class="nav_wrap">
 			<a href="/main.php" class="img_wrap">
 				<img src="/img/main/logo_horizon.jpg" alt="">
@@ -35,6 +35,32 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 				<li><a href="#part4" >주요 마케팅타겟</a></li>
 			</ul>
 		</div>
+	</header>
+
+	<header id="mob_header">
+		<div class="header">
+			<a href="/main.php" class="img_wrap">
+				<img src="/img/main/logo_horizon.jpg" alt="">
+			</a>
+
+			<div class="menu_open toggleBtn">
+				<img src="/img/main/menu.png" alt="">
+			</div>
+			<!-- <div class="menu_close toggleBtn">
+				<img src="/img/main/close.png" alt="">
+			</div> -->
+		</div>
+
+			<div class="nav">
+				<ul class="slide_menu">
+					<li><a href="#part1" >주요사업소개</a></li>
+					<li><a href="#part2" >상품구성</a></li>
+					<li><a href="#part3" >핵심강점과 경쟁력</a></li>
+					<li><a href="#part4" >주요 마케팅타겟</a></li>
+				</ul>
+			</div>
+			<div class="nav_bg"></div>
+			
 	</header>
 
 
@@ -69,15 +95,15 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 	<!-- 이미지슬라이드 끝 -->
 
 	<!-- 블로그스킨&포스팅 시작 -->
-	<section class="section_style blog_posting">
-		<!-- <img src="/img/main/blog.jpg" alt=""> -->
-	</section>
+	<!-- <section class="section_style blog_posting">
+		<img src="/img/main/blog.jpg" alt="">
+	</section> -->
 	<!-- 블로그스킨&포스팅 끝 -->
 
 	<!-- 홈페이지 제작 시작 -->
-	<section class="section_style hp_creating">
-		<!-- <img src="/img/main/hp_creating.jpg" alt=""> -->
-	</section>
+	<!-- <section class="section_style hp_creating">
+		<img src="/img/main/hp_creating.jpg" alt="">
+	</section> -->
 	<!-- 홈페이지 제작 끝 -->
 
 	<!-- 주요사업소개 시작 -->
@@ -262,7 +288,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 									<div class="marble_title" data-aos="fade-up">
 										<ul class="marble_title_ul">
 											<li class="black_bd">&nbsp;</li>
-											<li class="en_num strong">BRAND CUNSULTING</li>
+											<li class="en_num strong">BRAND CONSULTING</li>
 											<li class="black_bd">&nbsp;</li>
 										</ul>
 										<h3 class="marble_title_h3">브랜드컨설팅</h3>
@@ -298,7 +324,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 									<div class="marble_title" data-aos="fade-up">
 										<ul class="marble_title_ul">
 											<li class="orange_bd">&nbsp;</li>
-											<li class="en_num strong orange">MANAGEMENT CUNSULTING</li>
+											<li class="en_num strong orange">MANAGEMENT CONSULTING</li>
 											<li class="orange_bd">&nbsp;</li>
 										</ul>
 										<h3 class="marble_title_h3 orange">경영컨설팅</h3>
@@ -971,18 +997,52 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 	<!-- 고정 문의구간 끝 -->
 
 	<script>
+
+	//메인메뉴
+	$(function(){
+		$(".menu_open").on('click' , function(){  
+		$('.nav').toggleClass('on');
+		$('.nav_bg').toggleClass('on');
+		$('.nav').animate();
+		$('.nav_bg').animate();
+	});
+
+	$('.menu_close').on('click' , function(){
+		$('.nav').toggleClass('on');
+		$('.nav_bg').toggleClass('on');
+		$('.nav').animate();
+		$('.nav_bg').animate();
+		});
+  });
+
+
+// 	$(function(){
+//   $(".menu_open").click(function(){
+// 		if($(".nav").hasClass('on')){
+//  		$(".menu_open").removeClass('on');
+// 	 	$(".nav").removeClass('on');
+//  	}
+// 		else{
+// 	 	 $(".menu_open").addClass('on');
+// 		$(".nav").addClass('on'); 
+// 	  }
+//   });
+  
+// });
+
 	//탭메뉴
 	$('.tabs').tabs();
-
 
 	//바닥고정 db
 	$(function(){
 		$(".open").on('click' , function(){  
 		$('.bottom_db').toggleClass('active');
+		$('.db_form_wrap').show();
 	});
 
 	$('.close').on('click' , function(){
 		$('.bottom_db').toggleClass('active');
+		$('.db_form_wrap').hide();
 		});
   });
 
