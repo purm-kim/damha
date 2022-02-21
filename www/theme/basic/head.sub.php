@@ -78,7 +78,8 @@ add_javascript('<script src="'.G5_JS_URL.'/jquery-ui.min.js"></script>', 2);
 add_javascript('<script src="'.G5_JS_URL.'/jquery-3.6.0.min.js"></script>', 2);
 
 add_stylesheet('<link rel="stylesheet" href="'.G5_JS_URL.'/font-awesome/css/font-awesome.min.css">', 0);
-add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/style.css">', 1);
+
+add_stylesheet('<link rel="stylesheet" href="'.G5_CSS_URL.'/header_footer.css">', 1);
 add_stylesheet('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap">', 3);
 add_stylesheet('<link rel="stylesheet" href="http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css">', 3);
 add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">', 3);
